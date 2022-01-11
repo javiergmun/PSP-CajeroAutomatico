@@ -15,6 +15,7 @@ import java.util.UUID;
                 //cliente se conecta al servidor
                 Socket servidor = new Socket("localhost",6666 );
                 // CLIENTE ENVIA COSAS DE UNA CLASE
+            //los paquetes" que envio ahora serán mi cuenta bancaria
                 Paquete paqueteSalida = new Paquete("","paquete", UUID.randomUUID(),UUID.randomUUID(), Instant.now(),2);
                 ObjectOutputStream bufferSalida = new ObjectOutputStream(servidor.getOutputStream());
                 bufferSalida.writeObject(paqueteSalida);
