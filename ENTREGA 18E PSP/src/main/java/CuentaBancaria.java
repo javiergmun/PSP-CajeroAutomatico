@@ -40,4 +40,52 @@ public class CuentaBancaria  implements Serializable {
                 ", fecha=" + fecha +
                 '}';
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPin() {
+        return pin;
+    }
+
+    public void setPin(String pin) {
+        this.pin = pin;
+    }
+
+    public double getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(double dinero) {
+        this.dinero = dinero;
+    }
+
+    public UUID getIdCuentaBancaria() {
+        return idCuentaBancaria;
+    }
+
+    public void setIdCuentaBancaria(UUID idCuentaBancaria) {
+        this.idCuentaBancaria = idCuentaBancaria;
+    }
+
+    public Instant getSesionActiva() {
+        return sesionActiva;
+    }
+
+    public void setSesionActiva(Instant sesionActiva) {
+        this.sesionActiva = sesionActiva;
+    }
+
+    public LocalDateTime getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
 }
